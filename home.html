@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Parisienne&family=Racing+Sans+One&family=Rock+Salt&family=Sofia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Landing Page</title>
+</head>
+<body>
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="logo1.png"
+            alt="brand logo Paula Jaqueline"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#Our-Service">Our Service</a></li>
+						<li><a class="nav-link" href="#Making-a-Product">Making a Product</a></li>
+            <li><a class="nav-link" href="#Prices">Prices</a></li>
+						<li><a class="nav-link" href="#Contact-Us">Contact Us</a></li>
+						<li><a class="nav-link" href="#Social-Networks">Social Networks</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="sub-header">
+        <h2>Custom, handmade products</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address" />
+          <input id="submit" type="submit" value="Send me catalogue" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="Our-Service">
+          <div class="grid">
+            <div class="icon"><i class="lni lni-tshirt"></i></div>
+            <div class="description">
+              <h2>Premium Materials</h2>
+              <p>
+								Garments made with top quality material, national and imported fabrics according to customer requirements.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="lni lni-delivery"></i></div>
+            <div class="description">
+              <h2>Delivery</h2>
+              <p>
+								Home delivery is made to all Cordoba and the interior of the country. Own service
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="lni lni-briefcase"></i></div>
+            <div class="description">
+              <h2>Quality Assurance</h2>
+              <p>
+								Quality assurance
+								For every purchase you make, we'll make sure there's no damage or flaws. The quality is backed by the opinions of our customers.
+              </p>
+            </div>
+          </div>
+        </section>															
+        <section id="Making-a-Product">
+					<iframe
+          id="video" 
+					width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/tY0Tb8AqcKE" 
+					title="YouTube video 'How make a Encaje'" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+        </section>
+        <section id="Prices" class="pricing">
+          <div class="product" id="conjunto">
+            <div class="image">
+              <img src="conjunto.jpg" alt="imagen conjunto ropa interior">
+            </div>
+            <div class="level"><h3>Conjunto</h3></div>
+            <h4>$600</h4>
+            <ul>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn">Buy</button>
+          </div>
+          <div class="product" id="body">
+            <div class="image">
+              <img src="body.jpg" alt="photography of body dress">
+            </div>
+            <div class="level"><h3>Body</h3></div>
+            <h4>$500</h4>
+            <ul>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn">Buy</button>
+          </div>
+          <div class="product" id="pijama">
+            <div class="image">
+              <img src="babydoll.jpg" alt="photography of baby-boll">
+            </div>
+            <div class="level"><h3>Pijama</h3></div>
+            <h4>$1000</h4>
+            <ul>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+						</ul>
+            <button class="btn">Buy</button>
+          </div>
+        </section>
+				<section id="Contact-Us">
+					<form action='https://www.freecodecamp.com/email-submit'>
+						<fieldset>
+							<label>Name</label><input type="text" name="Name" placeholder="Name" required />
+							<label>City</label><input type="text" name="City" placeholder="Your City" required />
+							<label>Email</label><input type="email" name="email" placeholder="Email" required />
+							<label>Age</label><input type="number" name="Age" min="18" max="100" placeholder="Your Age" required />
+							<label>Phone</label><input type="tel" name="Phone" />
+							<label>Your opionion help our customers and us</label>
+								<textarea name="bio" rows="5" cols="50" placeholder="Let us know your opinion about quality of product for example"></textarea>
+              <input id="submit" type="submit" value="Send" class="btn" />
+            </fieldset>
+					</form>
+				</section>
+				<section id="Social-Networks">
+						<div><a href="#"><i class="lni lni-facebook-original"></i></a></div>
+						<div><a href="#"><i class="lni lni-instagram-original"></i></a></div>
+						<div><a href="#"><i class="lni lni-twitter-original"></i></a></div>
+				</section>
+      </div>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2022, Designer underwear by Paula Jaqueline</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+:root {
+	--color-fullbars--: linear-gradient(to right, #da4453, #89216b);
+	--color-back-btn--: rgb(219, 40, 70);
+	--color-btn--: #f1c40f;
+	--color-background-body--: rgb(238, 227, 234);
+	--color-subheader--: radial-gradient(circle, rgba(238,174,202,1) 7%, rgba(221,47,158,1) 68%);
+	--font-menu--: 'Racing Sans One', cursive;
+	--font-titulos--: 'Parisienne', cursive;
+	--font-text--: 'Sofia', cursive;
+	--font-button--: 'Rock Salt', cursive;
+}
+	
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 75px;
+	padding: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #da4453;
+	background: var(--color-fullbars--);
+	z-index: 100;
+}
+
+#nav-bar {
+	font-family: var(--font-menu--);
+	font-weight: bold;
+}
+
+#nav-bar ul li a:hover {
+	color: azure;
+	font-size: 22px;
+	transition: all 800ms;
+}
+
+nav > ul {
+	width: 60vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 25px;
+}
+
+li, a {
+	font-size: 1.2rem;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+
+.logo {
+	width: 60vw;
+}
+
+.logo img {
+	width: 140px;
+	height: 100px;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 10px;
+
+}
+input {
+	font-size: 15px;
+	justify-content: center;
+	padding: 3px;
+} 
+
+#submit {
+	font-family: var(--font-button--);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#sub-header {
+	font-family: 'Parisienne', cursive;
+	font-size: 25px;
+	background: rgb(238,174,202);
+	background: var(--color-subheader--);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+section #sub-header {
+	background-color: var(--color-subheader--);
+}
+
+#sub-header input[type='submit'] {
+	max-width: 170px;
+	width: 100%;
+	border: 0;
+	margin: 15px 0;
+	padding: 5px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-btn--);
+	cursor: pointer;
+	
+}
+
+#sub-header #submit:hover {
+	color: azure;
+	background-color: var(--color-back-btn--);
+	transform: scale(1.1);
+	transition: all 500ms;
+	border-radius: 8px;
+	border: 1px solid azure;
+}	
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	background-color: rgb(238, 227, 234);
+}
+
+#Our-Service h2 {
+	font-family: 'Sofia', cursive;
+	font-style: italic;
+}
+
+#Our-Service p {
+	font-family: 'Sofia', cursive;
+	font-weight: normal;
+}
+
+#Our-Service {
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#Our-Service .grid {
+	font-size: 18px;
+	text-align: left;
+}
+
+#Our-Service .description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 125px;
+	width: 80vw;
+	padding: 5px;
+
+}
+
+#Making-a-Product {
+	margin: 80px 0;
+}
+.grid {
+	display: flex;
+}
+
+.icon {
+	font-size: 3em;
+}
+
+#Our-Service .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+	width: 20vw;
+	color: darkorange;
+}
+
+.pricing {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: calc(100% / 3);
+	margin: 10px;
+	border: 2px solid var(--color-fullbars--);
+	border-radius: 5px;
+}
+
+.product:hover {
+	transform: scale(1.07);
+	transition: all 600ms;
+}
+
+.product .btn:hover, form .btn:hover {
+	background-color: var(--color-back-btn--);
+	cursor: pointer;
+	color: azure;
+	transform: scale(1.3);
+	transition: all 600ms;
+	border-radius: 8px;
+}
+
+.product .image {
+	width: 380px;
+	height: 450px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product .image #body img {
+	width: 350px;
+	height: 450px;
+}
+
+.product h3 {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 6px;
+}
+
+.product h4 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.product ul li {
+	font-size: 15px;
+	padding: 4px;
+}
+
+.product .btn {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px 12px;
+	border: 0;
+	background-color: var(--color-btn--);
+}
+
+#Contact-Us {
+	margin: 30px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+form .btn{
+	width: 80px;
+	padding: 4px;
+	border: 0;
+	background-color: var(--color-btn--);
+}
+form fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+
+}
+
+form fieldset textarea {
+	margin: 8px 40px ;
+	font-size: 15px;
+	padding: 5px;
+}
+
+input, label {
+	width: 100%;
+	text-align: center;
+	margin: 2px;
+
+}
+
+label:last-of-type {
+	margin: 10px 0px;
+	font-size: 18px;
+}
+
+#Contact-Us label {
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+#Social-Networks {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 12px;
+	padding-bottom: 5px;
+}
+
+#Social-Networks div i {
+	margin: 1px 12px;
+}
+
+#Social-Networks div i:hover {
+	transform: scale(1.08);
+	transition: all 600ms;
+	color: var(--color-back-btn--);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100% !important;
+	background-color: rgb(238,174,202);
+	background: var(--color-fullbars--)
+}
+
+footer > ul > li > a {
+	text-decoration-color: none;
+	font-size: 12px;
+	font-family: 'Racing Sans One', cursive;
+}
+
+footer > ul > li > a:hover {
+	color: azure;
+}
+
+footer span {
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+	padding: 7px;
+	color: rgba(54, 53, 53, 0.63);
+}
+
+@media screen and (max-width: 1100px) {
+	#nav-bar li a {
+		font-size: 15px;
+		transition: all 600ms;	
+	}
+
+	#header {
+		max-height: 50px;
+		transition: all 900ms;
+	}
+
+	.logo img {
+		width: 100px;
+		height: 75px;
+		transition: all 1s;
+	}
+
+	#sub-header {
+		margin-top: 75px;
+		transition: all 900ms;
+	}
+
+	#Prices {
+		transform: scale(0.9);
+		transition: all 800ms;
+	}
+
+}
+
+@media (max-width: 750px) {
+	#Prices {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: scale(1.1);
+		transition: all 800s;
+	}
+
+	#Our-Service .description {
+		font-size: 15px;
+		transition: all 900ms;
+
+	}
+
+	#nav-bar li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 8px;
+	}
+
+	#nav-bar li a {
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width:550px) {
+
+	#header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#header .logo {
+		display: none;
+	}
+
+	#nav-bar ul {
+		width: 80vw;
+		margin: 8px;
+	}
+
+	#nav-bar ul li a:hover {
+		color: azure;
+		font-size: 15px;
+		transition: all 800ms;
+	}
+
+	#sub-header {
+		font-size: 15px;
+		transition: all 800ms;
+		padding: 0;
+	}
+
+	#sub-header form {
+		transform: scale(0.8);
+		transition: all 800ms;
+	}
+
+	#Making-a-Product{
+		display: flex;
+		justify-content: center;
+	}
+
+	#Making-a-Product iframe {
+		transform: scale(0.8);
+		transition: all 700ms;
+	}
+
+	#Contact-Us {
+		transform: scale(0.9);
+		transition: all 700ms;
+	}
+	
+	#Contact-Us fieldset input {
+		width: 350px;
+		transition: all 800ms;
+	}
+}
+
+@media screen and (max-width:375px) {
+
+	#header {
+		left: 0;
+	}
+
+	#Our-Service .description {
+		font-size: 12px;
+		transition: all 800ms;
+	}
+
+	#Prices {
+		transform: scale(0.8);
+		transition: all 800ms;
+	}
+
+	#Contact-Us {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#Contact-Us fieldset input {
+		width: 220px;
+		transition: all 800ms;
+	}
+
+	#Contact-Us fieldset textarea {
+		width: 280px;
+		transition: all 800ms;
+	}
+
+}
