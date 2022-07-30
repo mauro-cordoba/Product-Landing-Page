@@ -16,6 +16,16 @@
   }
 }
 
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: pink;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgb(219, 40, 70);
+	border-radius: 5px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
