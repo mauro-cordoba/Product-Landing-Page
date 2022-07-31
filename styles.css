@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
 
 #nav-bar ul li a:hover {
 	color: azure;
-	font-size: 22px;
+	font-size: 21px;
 	transition: all 800ms;
 }
 
@@ -214,7 +214,7 @@ section #sub-header {
 .title-products h3 {
 	color: #fff;
 	font-family: var(--font-titulos--);
-	font-size: 2.8em;
+	font-size: 3.5em;
 }
 
 
@@ -227,16 +227,10 @@ section #sub-header {
 }
 
 .product {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	width: calc(100% / 3);
-	margin: 10px;
-	border: 2px solid var(--color-fullbars--);
-	border-radius: 5px;
-	background-color: rgb(226, 186, 218, 0.45);
-
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 22rem;
+	grid-template-columns: repeat(autofill, min-max(15rem, 1fr));
 }
 
 .product:hover {
