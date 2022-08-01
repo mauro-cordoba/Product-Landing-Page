@@ -104,7 +104,6 @@ input {
 #sub-header {
 	font-family: 'Parisienne', cursive;
 	font-size: 25px;
-	background-image: url(/image/back3.webp);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -112,6 +111,7 @@ input {
 	text-align: center;
 	height: 200px;
 	margin-top: 3em;
+	background-image: url(/image/back-header.jpg);
 }
 
 section #sub-header {
@@ -227,10 +227,16 @@ section #sub-header {
 }
 
 .product {
-	display: grid;
-	gap: 1rem;
-	grid-auto-rows: 22rem;
-	grid-template-columns: repeat(autofill, min-max(15rem, 1fr));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: calc(100% / 3);
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 2%;
+	background-color: rgb(226, 186, 218, 0.45);
+
 }
 
 .product:hover {
@@ -280,12 +286,14 @@ section #sub-header {
 }
 
 .product .btn {
-	font-size: 15px;
+	min-width: 2.5rem;
+	font-size: 0.9rem;
 	font-weight: bold;
 	margin-top: 5px;
 	margin-bottom: 10px;
-	padding: 5px 12px;
+	padding: 5px 20px;
 	border: 0;
+	border-radius: 3px;
 	background-color: var(--color-btn--);
 }
 
@@ -300,7 +308,7 @@ section #sub-header {
 }
 
 form .btn{
-	width: 80px;
+	min-width: 2rem;
 	padding: 4px;
 	border: 0;
 	background-color: var(--color-btn--);
@@ -336,7 +344,7 @@ label:last-of-type {
 }
 
 #Contact-Us form input {
-	width: 50%;
+	width: 40%;
 }
 
 #Contact-Us form #age {
