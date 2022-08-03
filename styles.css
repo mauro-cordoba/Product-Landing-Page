@@ -38,7 +38,6 @@ body::-webkit-scrollbar-thumb {
 	top: 0;
 	width: 100%;
 	height: 4.7em;
-	padding: 0px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,11 +58,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav > ul {
-	width: 60vw;
+	width: 80vw;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	margin-right: 25px;
+	justify-content: space-around;
+	margin-right: 3em;
 }
 
 li, a {
@@ -75,7 +74,7 @@ li, a {
 
 
 .logo {
-	width: 55vw;
+	width: 20vw;
 }
 
 .logo img {
@@ -439,15 +438,14 @@ section {
 		transition: all 900ms;
 	}
 
-	.logo img {
-		width: 100px;
-		height: 75px;
-		transition: all 1s;
+	#sub-header {
+		margin-top: 2em;
 	}
 
-	#sub-header {
-		margin-top: 75px;
-		transition: all 900ms;
+	.logo img {
+		width: 70px;
+		height: 50px;
+		transition: all 1s;
 	}
 
 }
@@ -516,19 +514,19 @@ section {
 	}
 
 	#Making-a-Product iframe {
-		transform: scale(0.8);
-		transition: all 700ms;
-	}
-
-	#Contact-Us {
 		transform: scale(0.9);
 		transition: all 700ms;
 	}
 	
 	#Contact-Us fieldset input {
-		width: 350px;
-		transition: all 800ms;
+		width: 80%;
+	
 	}
+
+	#Contact-Us textarea {
+		width: 80%;
+	}
+
 }
 
 @media screen and (max-width:375px) {
