@@ -219,11 +219,11 @@ section #sub-header {
 
 
 .pricing {
-	display: flex;
-	padding-top: 2.1em;
-	justify-content: center;
-	flex-direction: row;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+	grid-auto-rows: 47rem;
+	grid-gap: 1rem;
+	padding: 1rem 2rem;
 }
 
 .product {
@@ -231,8 +231,7 @@ section #sub-header {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	width: calc(100% / 3);
-	margin: 10px;
+	width: 100%;
 	border: 1px solid black;
 	border-radius: 2%;
 	background-color: rgb(226, 186, 218, 0.45);
@@ -254,17 +253,12 @@ section #sub-header {
 }
 
 .product .image {
-	width: 380px;
-	height: 450px;
+	width: 90%;
+	object-fit: cover;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.product .image #body img {
-	width: 350px;
-	height: 450px;
 }
 
 .product h3 {
@@ -456,22 +450,9 @@ section {
 		transition: all 900ms;
 	}
 
-	#Prices {
-		transform: scale(0.9);
-		transition: all 800ms;
-	}
-
 }
 
 @media (max-width: 750px) {
-	#Prices {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		transform: scale(1.1);
-		transition: all 800s;
-	}
 
 	#Our-Service .description {
 		font-size: 15px;
@@ -558,11 +539,6 @@ section {
 
 	#Our-Service .description {
 		font-size: 12px;
-		transition: all 800ms;
-	}
-
-	#Prices {
-		transform: scale(0.8);
 		transition: all 800ms;
 	}
 
